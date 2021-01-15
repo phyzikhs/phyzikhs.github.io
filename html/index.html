@@ -4,18 +4,18 @@
 	<title>HICKIES Originals</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="icon" href="images/tab_icon.png">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="icon" href="../drawables/tab_icon.png">
 </head>
 <body class="bady container-fluid justify-content-center">
 	<h2>HICKIES Originals</h2>
   <div id="ratings">
     <div class="stars">
-      <img src="images/star.png">
-      <img src="images/star.png">
-      <img src="images/star.png">
-      <img src="images/star.png">
-      <img src="images/star.png">
+      <img src="../drawables/star.png">
+      <img src="../drawables/star.png">
+      <img src="../drawables/star.png">
+      <img src="../drawables/star.png">
+      <img src="../drawables/star.png">
     </div>
     <div class="reviews num_reviews">6,895</div>
 		<div class="reviews tex_reviews">reviews</div>
@@ -64,20 +64,20 @@
 	</div>
 
 	<div class="h5g">details</div>
-	<div id="chosen_color" class="chosen-colors container">
+	<div class="chosen-colors container">
 
 	</div>
-	<div class="button col-md2" data-toggle="modal" data-target="#checkoutModal" onclick="showProceedList()">Checkout Now</div>
+
 	<div>
 		<div class="hori"></div>
 	</div>
 
-	<div class="h5g needHelp" data-toggle="modal" data-target="#helpmodal">need help?</div>
-	<div class="h5g shippingReturns">shipping & returns</div>
+	<div class="h5g">need help?</div>
+	<div class="h5g">shipping & returns</div>
 
 	</div>
 
-	<!--Add to Cart Modal -->
+	<!-- Modal -->
 	<div class="modal fade" id="carrt" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 	  <div class="modal-dialog modal-dialog-centered" role="document">
 	    <div class="modal-content">
@@ -89,75 +89,26 @@
 	      </div>
 	      <div class="modal-body modL">
 					<div class="colo colorname1">electric red</div>
-					<img src="images/minus.png" class="minas" onclick="decr()">
+					<img src="../drawables/minus.png" class="minas" onclick="decr()">
 					<div class="inTheCart2 incrementable">0</div>
-					<img src="images/plus.png" class="plas" onclick="incr()">
+					<img src="../drawables/plus.png" class="plas" onclick="incr()">
 					<!-- <div class="modaL justify-content-right">
 					</div> -->
 	      </div>
 	      <div class="modal-footer">
-	        <div class="agree btn btn-success" onclick="agree()" data-dismiss="modal">Agree</div>
-	        <div class="cancel btn btn-danger" data-dismiss="modal">Cancel</div>
+	        <div class="agree" onclick="agree()" data-dismiss="modal">Agree</div>
+	        <div class="cancel" data-dismiss="modal">Cancel</div>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 
-	<!-- Checkout Modal -->
-<div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Your cart contains:</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body showFinal">
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="location.reload()" >Proceed</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Help Modal -->
-<div class="modal fade" id="helpmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">How to use the site</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <ul>
-					<p>How to buy a new color:</p>
-					<li>Select any color you want from the list of colors</li>
-					<li>Press Add to cart</li>
-					<li>Add the number of those colors that you want by clicking the add button, or decrease the number if you want fewer number of items</li>
-					<li>Click Aggree to confirm selection. Your selected items will appear on the Details</li>
-					<li>You can remove any itme by just clicking it in the cart.</li>
-					<li>Click Checkout now where you will also see items in your cart, you can remove iteems by just clicking them.</li>
-					<li>When satisfied, click Proceed. This will go to Payment methods for your purchase.</li>
-				</ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="scripts/Script.js">
+	<script type="text/javascript" src="../scripts/Script.js">
 
 	</script>
-	<!-- <script src="scripts/Script.js"></script> -->
+	<!-- <script src="../scripts/Script.js"></script> -->
 </body>
 </html>
